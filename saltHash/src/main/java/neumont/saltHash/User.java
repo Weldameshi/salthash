@@ -19,7 +19,7 @@ public class User implements Serializable {
     @Column(name = "username")
     private String username;
     
-    @Column(name = "password")
+    @Column(name = "pass")
     private String password;
 
 	public String getUsername() {

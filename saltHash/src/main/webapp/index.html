@@ -2,37 +2,41 @@
 <html>
 
 <head>
-    <title>Batman</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Salt</title>
+    <meta charset="UTF-8">
     <script src='main.js'></script>
 </head>
 
 <body>
-    <h1><b>Batman API</b></h1>
+    <h1><b>SaltHash</b></h1>
+    <div id=success_div style="display: none;">
+        <h1>You logged in</h1>
+    </div>
+    <div id="buttons" style="display: block;">
+        <br />
+        <br />
+        <button onclick="showLoginDiv();">Login</button>
+        <button onclick="showCreateUserDiv();">Create User</button>
+        <br />
+        <br />
+    </div>
     <div id="everything_div">
-    	<div id="login_div" style="display: none;">
+        <div id="login_div" style="display: none;">
 
-                <label>UserName</label>
-                <br>
-                <input type='text' id='login_username' placeholder="Username">
-                <br>
-                <label>Password</label>
-                <br>
-                <input type='password' id='login_password' placeholder="Password"/>
-                <br>
-    		<button onclick="login();">login</button>
+            <label>UserName</label>
+            <br>
+            <input type='text' id='login_username' placeholder="Username">
+            <br>
+            <label>Password</label>
+            <br>
+            <input type='password' id='login_password' placeholder="Password" />
+            <br>
+            <button onclick="login();">login</button>
 
         </div>
-        <div id="buttons" style="display: block;">
-            <br />
-    		<br />
-            <button onclick="showLoginDiv();">People</button>
-            <button onclick="showCreateUserDiv();">Tech</button>
-            <br />
-            <br />
-        </div>
-        
-    	<div id="user_div" style="display: none;">
+
+
+        <div id="user_div" style="display: none;">
             <form onsubmit="return false;">
                 <label>Add User</label>
                 <br />
@@ -45,7 +49,7 @@
                 <br />
                 <br />
             </form>
-            </div>
+        </div>
     </div>
 </body>
 
